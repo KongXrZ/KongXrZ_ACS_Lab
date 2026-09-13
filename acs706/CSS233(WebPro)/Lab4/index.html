@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Practice Lab</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .active {
+            background-color: lightgreen;
+            color: darkgreen;
+            font-weight: bold;
+        }
+    </style>
+    <script src="script5.js" defer></script>
+</head>
+
+<body>
+    <h1>DOM Practice Lab</h1>
+
+    <div id="counter-box" class="box">0</div>
+
+    <button id="btn-increase">Increase</button>
+    <button id="btn-toggle">Toggle Style</button>
+    <button id="btn-reset">Reset</button>
+</body>
+</html>
