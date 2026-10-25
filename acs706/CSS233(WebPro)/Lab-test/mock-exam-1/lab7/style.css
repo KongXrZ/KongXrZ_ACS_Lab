@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "kanit";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  width: 350px;
+  height: 30px;
+  padding: 10px;
+}
+
+.submit-btn {
+  width: 350px;
+  height: 35px;
+  margin-top: 10px;
+  font-size: 15px;
+  background-color: blueviolet;
+  border: 0;
+  color: white;
+  font-family: "kanit";
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: darkblue;
+}
+
+.error {
+  color: red;
+}
+
+.result-section {
+  margin-top: 30px;
+}
+
+.result {
+  background-color: brown;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.active {
+  opacity: 1;
+}
+
+.inactive {
+  opacity: 0;
+}

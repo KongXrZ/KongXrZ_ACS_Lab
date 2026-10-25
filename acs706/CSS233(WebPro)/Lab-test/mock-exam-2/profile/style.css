@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "kanit";
+}
+
+.card {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+}
+
+.content .role {
+  color: gray;
+}
+
+.content .follow-btn {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: 15px;
+  background-color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(0px);
+}
+
+.content .follow-btn:hover {
+  transform: translateY(-2px);
+}
+
+.content .follow-btn:active {
+  transform: translateY(0px);
+}
+
+.content .follow-btn:focus-visible {
+  border: 2px solid black;
+}

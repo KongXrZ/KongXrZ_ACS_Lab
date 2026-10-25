@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "kanit";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+#open-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#open-btn:hover {
+  transform: scale(1.05);
+  background-color: brown;
+}
+
+#open-btn:active {
+  transform: scale(1);
+}
+
+#modal {
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  transform: scale(0);
+  transition: all 0.2s ease-in-out;
+}
+
+#alert {
+  position: absolute;
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  transform: scale(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.action button {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#del-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#del-btn:hover {
+  transform: scale(1.05);
+  background-color: brown;
+}
+
+#del-btn:active {
+  transform: scale(1);
+}
+
+#cancel-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#cancel-btn:hover {
+  transform: scale(1.05);
+  background-color: aliceblue;
+}
+
+#cancel-btn:active {
+  transform: scale(1);
+}
+
+#close-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+#close-btn:hover {
+  transform: scale(1.05);
+  background-color: aliceblue;
+}
+
+#close-btn:active {
+  transform: scale(1);
+}

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "kanit";
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.loading-1,
+.loading-2,
+.loading-3,
+.loading-4,
+.loading-5 {
+  width: 25px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.loading-1 {
+  background-color: blue;
+  animation: move 1s ease-in-out infinite;
+}
+
+.loading-2 {
+  background-color: crimson;
+  animation: move 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+.loading-3 {
+  background-color: green;
+  animation: move 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.loading-4 {
+  background-color: chocolate;
+  animation: move 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.loading-5 {
+  background-color: blueviolet;
+  animation: move 1s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  75% {
+    transform: translateY(-25px);
+  }
+}

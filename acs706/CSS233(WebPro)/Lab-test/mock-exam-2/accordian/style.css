@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "kanit";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.accordian {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 700px;
+}
+
+.accordian-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.accordian-detail {
+  display: grid;
+  grid-template-rows: 0fr;
+  padding-bottom: 0px 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.accordian-detail p {
+  min-height: 0;
+}
+
+.accordian.active .accordian-detail {
+  grid-template-rows: 1fr;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+
+.arrow {
+  font-size: 25px;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow-active {
+  transform: rotate(90deg);
+}

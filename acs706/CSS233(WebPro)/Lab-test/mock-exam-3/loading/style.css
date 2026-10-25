@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "kanit";
+}
+
+p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.loading-1,
+.loading-2,
+.loading-3,
+.loading-4,
+.loading-5 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.loading-1 {
+  background-color: red;
+  animation: move 1.2s ease-in-out infinite;
+}
+
+.loading-2 {
+  background-color: blue;
+  animation: move 1.2s ease-in-out infinite 0.15s;
+}
+
+.loading-3 {
+  background-color: blueviolet;
+  animation: move 1.2s ease-in-out infinite 0.3s;
+}
+
+.loading-3 {
+  background-color: green;
+  animation: move 1.2s ease-in-out infinite 0.45s;
+}
+
+.loading-4 {
+  background-color: brown;
+  animation: move 1.2s ease-in-out infinite 0.6s;
+}
+
+.loading-5 {
+  background-color: orangered;
+  animation: move 1.2s ease-in-out infinite 0.75s;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
