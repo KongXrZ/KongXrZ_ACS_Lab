@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS233 Lab 18</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="wrap">
+        <h1>Labtest 3</h1>
+        <p>Open a modal. Clicking inside the dialog must not close it; clicking the backdrop, Close, or Escape must
+            close it.</p>
+        <button id="open" type="button">Open details</button>
+        <p id="state" role="status">Modal closed</p>
+        <div id="backdrop" class="backdrop" hidden>
+            <section id="dialog" class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+                <h2 id="dialog-title">Course details</h2>
+                <p id="dialog-body">CSS233 — Web Programming I</p>
+                <div class="dialog-actions">
+                    <button id="action" class="secondary" type="button">
+                        <span>View info</span>
+                    </button>
+                    <button id="close" type="button">
+                        <span>Close</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+        <p id="info" role="status"></p>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
