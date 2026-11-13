@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Verify OTP | Secure OTP Demo</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/app.js"></script>
+  </head>
+  <body data-page="otp">
+    <main class="layout">
+      <section class="panel" aria-labelledby="form-title">
+        <div class="eyebrow">VERIFY YOUR IDENTITY</div>
+        <h2 id="form-title">ยืนยัน OTP</h2>
+        <p class="muted">
+          ส่งรหัสไปที่ <strong id="masked-email">อีเมลของคุณ</strong>
+        </p>
+        <div class="status" data-status role="alert" hidden></div>
+        <form id="otp-form" novalidate>
+          <label for="otp">OTP (6 หลัก)</label>
+          <input
+            id="otp"
+            name="otp"
+            class="otp-input"
+            autocomplete="one-time-code"
+            inputmode="numeric"
+            maxlength="6"
+            pattern="[0-9]{6}"
+            placeholder="000000"
+            required
+          />
+          <button type="submit" class="primary">
+            ยืนยันและเข้าสู่ระบบ <span aria-hidden="true">→</span>
+          </button>
+        </form>
+        <a href="/login" class="text-link"
+          >← กลับไปหน้า Login เพื่อขอ OTP ใหม่</a
+        >
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Profile | Secure OTP Demo</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/app.js"></script>
+  </head>
+  <body data-page="profile">
+    <main class="layout">
+      <section class="panel" aria-labelledby="form-title">
+        <div class="eyebrow">PROTECTED PROFILE</div>
+        <h2 id="form-title">ข้อมูลผู้ใช้</h2>
+        <p class="muted">ข้อมูลจาก <code>GET /api/profile</code></p>
+        <div class="status" data-status role="alert" hidden></div>
+        <div id="profile-data" class="profile-data" hidden>
+          <div class="profile-row">
+            <span>Username</span><strong id="profile-username"></strong>
+          </div>
+          <div class="profile-row">
+            <span>Email</span><strong id="profile-email"></strong>
+          </div>
+          <div class="profile-row">
+            <span>Login time</span><strong id="profile-time"></strong>
+          </div>
+          <div class="verified">
+            <span aria-hidden="true">●</span> OTP Verified · Session Active
+          </div>
+        </div>
+        <p id="loading-profile" class="muted">กำลังตรวจสอบ Session...</p>
+        <button type="button" id="logout-button" class="primary secondary">
+          ออกจากระบบ <span aria-hidden="true">→</span>
+        </button>
+        <a href="/login" class="text-link">← กลับหน้า Login</a>
+      </section>
+    </main>
+  </body>
+</html>
