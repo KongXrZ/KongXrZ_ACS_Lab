@@ -1,0 +1,106 @@
+* {box-sizing: border-box;}
+body { 
+  margin:0; 
+  min-height:100vh; 
+  display:grid; 
+  place-items:center; 
+  background:#f4f7fb; 
+  color:#17233c; 
+  font-family:Arial,sans-serif; 
+}
+.stage { 
+  width:min(92vw,580px); 
+  background:white; 
+  border:1px solid #dce5f0; 
+  border-radius:22px; 
+  padding:34px; 
+  box-shadow:0 18px 50px #12295412; 
+}
+h1 {font-size:22px; margin:0 0 8px;}
+p {color:#64748b; margin:0 0 28px;}
+
+.track {
+  height:12px; 
+  background:#e1e9f5; 
+  border-radius:100px; 
+  overflow:hidden;
+}
+.progress {
+  height:100%; 
+  width:0; 
+  background:linear-gradient(90deg,#3b82f6,#16a085); 
+  border-radius:100px;
+}
+.steps {
+  display:flex; 
+  justify-content:space-between; 
+  align-items:flex-start; 
+  gap:10px; 
+  margin-top:22px;
+}
+.step {
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  gap:8px; 
+  width:100px; 
+  color:#8090a8;
+}
+.marker {
+  width:44px; 
+  height:44px; 
+  border-radius:50%; 
+  background:#e6edf7; 
+  color:#7a8ba7; 
+  display:grid; 
+  place-items:center; 
+  font-weight:bold; 
+  border:3px solid #d1ddec;
+}
+.step b {font-size:13px;}
+.note {
+  margin-top:30px; 
+  font-size:12px; 
+  text-align:center; 
+  color:#8191a9;
+}
+
+.progress {
+  animation: progress 8s ease-in-out infinite;
+}
+@keyframes progress {
+  0% {width:0;}
+  100% {width:100%;}
+}
+
+.steps .step:nth-child(1) .marker {
+  animation: step 8s infinite;
+}
+@keyframes step {
+  0% {color:#ffffff; background:#1900ff; border-color:#1900ff;}
+  32% {color:#ffffff; background:#1900ff; border-color:#1900ff;}
+  33% {color:#000000; background:#22ff0056; border-color:#22FF00;}
+  100% {color:#000000; background:#22ff0056; border-color:#22FF00;}
+  }
+
+.steps .step:nth-child(2) .marker {
+  animation: step-1 8s infinite;
+}
+@keyframes step-1 {
+  0% {color:#7a8ba7; background:#e6edf7; border-color:#d1ddec;}
+  32% {color:#7a8ba7; background:#e6edf7; border-color:#d1ddec;}
+  33% {color:#ffffff; background:#1900ff; border-color:#1900ff;}
+  65% {color:#ffffff; background:#1900ff; border-color:#1900ff;}
+  66% {color:#000000; background:#22ff0056; border-color:#22FF00;}
+  100% {color:#000000; background:#22ff0056; border-color:#22FF00;}
+  }
+
+.steps .step:nth-child(3) .marker {
+  animation: step-2 8s infinite;
+}
+@keyframes step-2 {
+  0% {color:#7a8ba7; background:#e6edf7; border-color:#d1ddec;}
+  67% {color:#7a8ba7; background:#e6edf7; border-color:#d1ddec;}
+  68% {color:#ffffff; background:#1900ff; border-color:#1900ff;}
+  100% {color:#ffffff; background:#1900ff; border-color:#1900ff;}
+  }

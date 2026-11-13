@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Labtest - Race-Safe Course Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Labtest: Race-Safe Course Search</h1>
+        <p>Live search should wait for a typing pause and never show old results over newer ones.</p>
+        <div class="controls">
+            <label for="query">Course keyword</label>
+            <input id="query" autocomplete="off" placeholder="Try web or database">
+            <small>API requests: <span id="requests">0</span></small>
+        </div>
+        <p class="status" id="status" role="status">Type a course name.</p>
+        <ul id="results"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
